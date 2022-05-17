@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-10">
-      <%= render 'shared/error', obj: @user %>
+      <%= render 'shared/error',obj: @user %>
       <%= form_with(model: @user, local: true ) do |f|%>
         <div class="row mb-3 mt-4" >
           <%= f.label :username, class: "col-sm-2 col-form-label text-white fw-bold"%>
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div  class="text-center mb-3 mt-4 ">
-          <%= f.submit class: "btn btn-outline-success btn-lg"%>
+          <%= f.submit"signup", class: "btn btn-outline-success btn-lg"%>
         </div>
       <%end%>
     </div>
