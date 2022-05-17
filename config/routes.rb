@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   root "page#index"
   get "login", to: "page#login"
   get "signup", to: "users#new"
-  resources :users, except: [:new]
+  resources :users
   resources :articles
 end
