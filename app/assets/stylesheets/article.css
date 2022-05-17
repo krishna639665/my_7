@@ -1,0 +1,22 @@
+.card-main:hover {
+    transform: scale(1.1);
+    transition: .5s
+}
+
+.inner {
+    display: inline-block;
+}
+
+.center {
+    margin: auto !important;
+    width: 50% !important;
+}
+
+.table {
+    margin: auto !important;
+    width: 50% !important;
+}
+
+.form-btn {
+    text-align: center;
+}
