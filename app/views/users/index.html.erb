@@ -1,0 +1,23 @@
+<section id="cta" class="cta">
+  <div class="container ">
+    <h3 class="text-center ">Blogger's</h3>
+    <div class="row mt-5">
+      <% @users.each do |user|%>
+        <div class="col-md-4 mb-4">
+          <div class="card card-main">
+            <div class="view overlay">
+              <%= image_tag ("img (67).jpg"), class: "card-img-top"%>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Created By: <%= link_to user.username ,user %></h5>
+              <%# <h5 class="card-title"><%= link_to gravatar_for(user, size: 150), user %></h5>
+            <h5 class="card-text text-black"><%= pluralize(user.articles.count, "article")%></p>
+            <%= link_to 'Show profile',  user, class: "btn btn-outline-success rounded-pill" %>
+            <%= link_to 'Edit profile',  edit_user_path(user), class: "btn btn-outline-success rounded-pill" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+</section>

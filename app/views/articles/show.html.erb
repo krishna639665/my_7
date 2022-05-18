@@ -1,8 +1,9 @@
 <section id="cta" class="cta">
   <div class="container">
-    <h3 class='text-center'> Showing Article Details </h3>
+    <h3 class='text-center mb-4'> Showing Article Details </h3>
     <%= render 'layouts/messages'%>
-    <table class="table table-striped table-bordered mt-4"  boder=1>
+    <%= link_to gravatar_for(@article.user, size: 150),user_path(@article.user)%>
+    <table class="table table-striped table-bordered "  boder=1>
       <thead class="text-light">
         <tr>
           <th >Created By: </th>
